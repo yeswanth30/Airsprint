@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/Totallayout"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ijijij"
+        android:orientation="horizontal">
+        <!-- First part: ImageView -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/green" />
+        <!-- Second part: Nested RelativeLayout for TextViews -->
+        <RelativeLayout
+            android:layout_width="242dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/imageView">
+
+            <!-- Two TextViews vertically -->
+            <TextView
+                android:id="@+id/NameTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                android:textColor="#44484e"
+                android:text="TextView 1"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/timetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NameTextview"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                android:text="Time"
+                android:textColor="#9aa7b5"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/datetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/timetextview"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/timetextview"
+                android:padding="5dp"
+                android:text="Date"
+                android:textColor="#9aa7b5"
+
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/qrcodeimage"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/baseline_more_vert_24" />
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ijijij"
+        android:background="#D3D3D3"
+        />
+
+</RelativeLayout>

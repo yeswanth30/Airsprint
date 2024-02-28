@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Define your color resources here -->
+    <color name="red">#FF0000</color> <!-- Red -->
+    <color name="green">#00FF00</color> <!-- Green -->
+    <color name="orange">#FFA500</color> <!-- Orange -->
+    <color name="transparent">#00000000</color>
+    <color name="hintColor">#808080</color> <!-- or any color you prefer -->
+    <color name="custom_green">#59cc46</color>
+    <color name="custom_radio_button_color">#1f2e3d</color>
+
+        <color name="selected_radio_button_color">#1f2e3d</color> <!-- Red color when selected -->
+        <color name="unselected_radio_button_color">#FFFFFFFF</color> <!-- Green color when unselected -->
+
+
+
+
+
+</resources>

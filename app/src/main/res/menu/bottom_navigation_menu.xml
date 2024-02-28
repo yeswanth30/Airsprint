@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_item_1"
+        android:title="Home"
+        android:icon="@drawable/homeee" />
+    <item
+        android:id="@+id/nav_item_2"
+        android:title="Track"
+        android:icon="@drawable/trackkllll" />
+    <item
+        android:id="@+id/nav_item_3"
+        android:title="Booking"
+
+        android:icon="@drawable/truckkkk" />
+    <item
+        android:id="@+id/nav_item_4"
+        android:title="Profile"
+        android:icon="@drawable/profilleee" />
+
+</menu>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="160dp"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/firstRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enter OTP"
+            android:textAlignment="center"
+android:layout_marginStart="40dp"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView112"
+            android:layout_below="@+id/textView"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:text="We’ve sent otp to your email, "
+            android:textSize="18sp"
+            android:textColor="#B2B7C6" />
+
+        <TextView
+            android:id="@+id/textView1122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView112"
+            android:layout_marginStart="0dp"
+
+            android:text="Random3321@gmail.com"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstRelativeLayout"
+        android:layout_marginTop="46dp"
+        android:id="@+id/boxes"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:background="@drawable/box_background"
+            android:layout_marginEnd="14dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:background="@drawable/box_background"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="14dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:background="@drawable/box_background"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="14dp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:background="@drawable/box_background"
+            android:layout_marginStart="6dp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incorrect Otp"
+        android:layout_below="@+id/boxes"
+        android:textColor="#f66b6b"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        android:textSize="20dp"
+         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boxes"
+        android:id="@+id/ikikik"
+
+        android:layout_marginTop="26dp">
+
+        <TextView
+            android:id="@+id/textView1s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn’t receive any code?"
+            android:layout_marginStart="30dp"
+            android:textSize="18sp"
+            android:textColor="#B2B7C6" />
+        <TextView
+            android:id="@+id/Resendotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/textView1s"
+            android:textColor="@color/black" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loginButton123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ikikik"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="Verify"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton123"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Remembered password?"
+            android:textColor="#B2B7C6"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/textView1"
+            android:text="Sign In"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+</RelativeLayout>

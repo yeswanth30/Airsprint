@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <!-- Container for fragments -->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabLayout" />
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+
+            android:background="#1f2e3d"
+            android:layout_marginTop="0dp"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:id="@+id/discover"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/baseline_arrow_back_ios_24"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="10dp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Booking Details"
+                                    android:layout_marginLeft="55dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="25sp" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+        </RelativeLayout>
+
+        <!-- TabLayout -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            android:layout_below="@+id/first"
+            android:background="@color/white"
+android:visibility="gone"
+            app:tabGravity="fill" />
+
+        <!-- ViewPager -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabLayout" />
+
+</RelativeLayout>

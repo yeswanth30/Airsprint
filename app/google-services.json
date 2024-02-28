@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "193259102210",
+    "firebase_url": "https://trackingapp-d0e80-default-rtdb.firebaseio.com",
+    "project_id": "trackingapp-d0e80",
+    "storage_bucket": "trackingapp-d0e80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193259102210:android:b67288e85c032a2f45471b",
+        "android_client_info": {
+          "package_name": "com.airsprint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7eYx4zkfKxrzyAdR8Vhvd7afhZ4m0B9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
