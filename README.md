@@ -2,7 +2,11 @@ Airsprint:-
 
 "Airsprint app offers seamless parcel management with login, signup, and OTP-based password recovery. Features Home Fragment for viewing bookings, QR code scanning, and notifications. Track Fragment enables tracking via ID or QR code. Booking Details Fragment streamlines the booking process with stepwise guidance and cost calculation. Profile Fragment allows users to view and edit their details effortlessly."
 
-1.Includes login, signup, and forgot password functionalities with OTP generation.
+Airsprint:-
+
+-One Splash Screen and three Onboarding Screens !!
+
+1.Includes login, signup, and forgot password functionalities with OTP generation and setting new password.
 
 Users can log in, sign up for a new account, or recover their password through OTP verification.
 
@@ -33,4 +37,5 @@ Users can navigate through each step to complete the booking process.
 Display user details.
 Users can view their profile information such as name, email, image, password, username, phn number.
 Editing functionality.
+
 
